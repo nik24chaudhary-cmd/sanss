@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Cinzel", Georgia, serif;
+  
+  --color-brand-cream: #FAF9F6; /* Alabaster / Warm White */
+  --color-brand-buff: #F5EFEB; /* Soft warmth */
+  --color-brand-taupe: #E2DBD5; /* Soft beige/sand */
+  --color-brand-charcoal: #151515; /* High quality dark charcoal */
+  --color-brand-muted: #66635F; /* Warm graphite gray */
+  --color-brand-accent: #8E7A5F; /* Luxury warm gold/bronze brush */
+  
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-charcoal);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar to keep it super premium and thin */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-taupe);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-accent);
+}

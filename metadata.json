@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Sanssa Home",
+  "description": "Premium minimalist furniture brand and luxury interior design studio from Mohali and Chandigarh, showcasing curated collections and bespoke design services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
